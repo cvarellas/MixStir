@@ -47,12 +47,12 @@ ul{
 }
 .ftext{
     font-family:'Montserrat';
-    font-size: 4vw;
+    font-size: 3vw;
     text-decoration: none;
     width: 30vw;
     text-align: center;
     transition: all .2s ease;
-    color: black
+    color: black;
 }
 
 .ftext:hover{
@@ -63,48 +63,100 @@ ul{
     border-left: solid .4vw black;
 }
 .des{
-    margin-top: 3%;
-    margin-left: 3%;
+    margin: 3% 0%;
     font-family:'Montserrat';
+}
+.result{
+    margin-left: 3%;
 }
 .result{
     margin-bottom; 0;
     font-size: 4vw;
     margin-bottom: 0%;
 }
-.ingre, .nei{
+
+.ingre, .name, .nei{
     font-size: 4.5vw;
 }
+
 .nei{
     color: #fe7a55 !important;
 }
 .location{
-    margin-top: 0;
     font-size: 4.5vw;
-    margin-bottom: black solid 2px;
 }
-.market {
-  list-style: none;
-  margin-left: 1em;
-  counter-reset: line;
+.des{
+    border-bottom: #ffd633 solid 1px;
+    margin-bottom: 0;
+}
+.market{
+    list-style-type: none;
+    margin-left: -9.5%;
+}
+.market>li{
+    margin:0;
+    padding: 2% 4% 2% 0;
+    border-bottom: 1px solid #ffd633;
+    vertical-align: baseline;
+}
+.wf{
+    display: grid;
+    grid-template-columns:4fr 1.5fr 1fr;
+    grid-template-areas: "a c b";
+    flex-direction: column;
+    font-family: "Montserrat";
+    margin-left: 10%;
+    height: 17vh;
+
+}
+.plus{
+    grid-area: c;
+    margin-top: 10vh;
+}
+.store{
+    font-family: "Coustard";
+    font-size: 5vw;
+}
+.one{
+    grid-area: a;
+    font-size: 3vw;
+}
+.plus{
+    margin-left: 15%;
+}
+.add{
+    margin-top: 5%;
+}
+.two{
+    grid-area: b;
+    text-align: right;
+    font-size: 3.5vw;
+}
+.dis{
+    font-size: 4.5vw;
+}
+.num{
+    display: block;
+}
+.price{
+    margin-top: 30%;
+}
+.second{
+    margin-top: 10%;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fe7a55;
+}
+.sl, .mr, .set{
+    color: white;
+    font-size: 4vw;
 }
 
-.market > li {
-  position: relative;
-  margin-bottom: 1.5em;
-}
 
-.market > li:before {
-	position: absolute;
-	left: -3em;
-/*    display: inline-block;*/
-    width: 3vh;
-	height: 3vh;
-  background-color: #fe7a55;
-	border-radius: 50%;
-	color: #fff;
-	text-align:center;
-  line-height: 1.25em;
-	counter-increment: line;
-	content: counter(line);
-}

@@ -1,0 +1,160 @@
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style-type: none;
+}
+.input-group{
+    margin-top: 2%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-fluid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "a b c"
+}
+.ms{
+    grid-area: a;
+}
+.input-group{
+    grid-area: b;
+}
+.drop-list{
+    margin-left: -20%;
+}
+.ingli{
+    margin-left:10%;
+}
+.user{
+    grid-area: c;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    font-family:'Montserrat';
+}
+.filter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: .5vh outset black;
+    padding: 1.5% 1% 1%;
+    margin-top: -5%;
+    background-color: #fe7a55;
+}
+.ftext{
+    font-family:'Montserrat';
+    font-size: 4vw;
+    text-decoration: none;
+    width: 30vw;
+    text-align: center;
+    transition: all .2s ease;
+    color: black;
+}
+
+.ftext:hover{
+    background-color: #fe7a55;
+    color: white;
+}
+#right{
+    border-left: solid .4vw black;
+}
+.des{
+    margin: 3% 0%;
+    font-family:'Montserrat';
+}
+.result, .location{
+    margin-left: 3%;
+}
+.result{
+    margin-bottom; 0;
+    font-size: 4vw;
+    margin-bottom: 0%;
+}
+.ingre, .nei{
+    font-size: 4.5vw;
+}
+.nei{
+    color: #fe7a55 !important;
+}
+.location{
+    margin-top: 0;
+    font-size: 4.5vw;
+}
+.des{
+    border-bottom: #ffd633 solid 1px;
+    margin-bottom: 0;
+}
+.market{
+    list-style-type: none;
+    margin-left: -9.5%;
+}
+.market>li{
+    margin:0;
+    padding: 2% 4% 2% 0;
+    border-bottom: 1px solid #ffd633;
+    vertical-align: baseline;
+}
+.wf{
+    display: grid;
+    grid-template-columns:4fr 1.5fr 1fr;
+    grid-template-areas: "a c b";
+    flex-direction: column;
+    font-family: "Montserrat";
+    margin-left: 10%;
+    height: 17vh;
+
+}
+.plus{
+    grid-area: c;
+}
+.store{
+    font-family: "Coustard";
+    font-size: 5vw;
+}
+.one{
+    grid-area: a;
+    font-size: 3vw;
+}
+.plus{
+    margin-left: 15%;
+}
+.add{
+    margin-top: 5%;
+}
+.two{
+    grid-area: b;
+    text-align: right;
+    font-size: 3.5vw;
+}
+.dis{
+    font-size: 4.5vw;
+}
+.num{
+    display: block;
+}
+.price{
+    margin-top: 30%;
+}
+.second{
+    margin-top: 10%;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fe7a55;
+}
+.sl, .mr, .set{
+    color: white;
+    font-size: 4vw;
+}
+
+
