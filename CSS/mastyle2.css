@@ -106,23 +106,27 @@ ul{
     flex-direction: column;
     font-family: "Montserrat";
     margin-left: 10%;
-    height: 17vh;
-
+}
+.wf2 .numin{
+    margin-top: -4%;
+}
+.wf2 .two .add{
+    margin-top: 13%;
+}
+.wf2 .plus{
+    margin-top: 7vh;
 }
 .plus{
     grid-area: c;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 .store{
     font-family: "Coustard";
-    font-size: 5vw;
+    font-size: 4vw;
 }
 .one{
     grid-area: a;
-    font-size: 3vw;
-}
-.plus{
-    margin-left: 15%;
+    font-size: 4vw;
 }
 .add{
     margin-top: 5%;
@@ -130,7 +134,7 @@ ul{
 .two{
     grid-area: b;
     text-align: right;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
 }
 .dis{
     font-size: 4.5vw;
@@ -139,7 +143,7 @@ ul{
     display: block;
 }
 .price{
-    margin-top: 30%;
+    margin-top: -5%;
 }
 .second{
     margin-top: 10%;
