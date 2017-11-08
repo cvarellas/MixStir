@@ -18,17 +18,37 @@ $(document).ready(function(){
         $('.market').fadeIn(0.01);
     });
     
-    $('.first').click(function(){
+    $('.one').click(function(){
        window.location.href = "https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage" 
     });
-    
-    $('.second').click(function(){
+    $('.two').click(function(){
        window.location.href = "https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage" 
     });
-    
     
 
-})
+    $('.plus').click(function(){
+        document.getElementById('slnum').innerHTML = '(1)';
+        document.getElementById('slnum').style.color = "white"
+    });
+    
+var availableTags = [
+      "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+    
+    $("#tags").keyup(function(){
+    if($(this).val().length>0){
+        $("#list").hide();
+    }
+    else
+    {
+         $("#list").show();
+    }
+});
+  } );
+
 
 
 

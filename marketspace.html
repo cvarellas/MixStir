@@ -15,50 +15,60 @@
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 <script src="js/msscript1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Coustard|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 
 <nav class="navbar">
   <div class="container-fluid">
       <a class="ms" href="#"><img src="img/logo.png" width="100%"></a>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group" for="tags">
+        <input type="text" class="form-control" placeholder="Search" id="tags">
         <div class="input-group-btn">
           <button class="btn btn-default" type="submit">
             <i class="glyphicon glyphicon-search"></i>
           </button>
         </div>
-      </div>
-      <div class="content-list" id="list">
-        <ul class="drop-list">
-            <li class="re">
-                <ul class="recent">Recent Search
-                   <li class="ingli">
-                      <a href="#">
-						Apple (ingredient)
-					</a> 
-                   </li>
-                    <li class="ingli">
-                      <a href="#">
-						Apple pie (Recipe)
-					</a> 
-                   </li>
-                </ul>	
-            </li>
-            <li class="po">
-                <ul class="popular">Popular Search
-                <li class="ingli">
-                <a href="#">Pumpkin Pie (Recipe)</a>    
-                </li>
-                <li class="ingli">
-                <a href="#">Pumpkin Pie (Recipe)</a>    
-                </li>
-                </ul>
-            </li>
-          </ul>	
-		</div>
+      </div>  
     <a class="user" href="#">Hi, Nancy</a>
   </div>
+  <div id="list">
+        <ul class="droplist">
+        <li class="re">Recent Search
+          <div class="recent">
+          <a class="ingli" href="marketspace.html">Apple (Ingredient)
+           </a> 
+           <a class="ingli" href="marketspacere.html">Pumpkin pie (Recipe)
+            </a> 
+          </div>	
+        </li>
+        <li class="po">Popular Search
+            <div class="popular">
+            <a class="ingli" href="#">Pumpkin Pie (Recipe)</a> 
+            <a class="ingli" href="#">Beef Stew (Recipe)</a>
+            <a class="ingli" href="#">Butternut Squash Soup (Recipe)</a>
+            <a class="ingli" href="#">Brussel Sprout (Ingredient)</a><a class="ingli" href="#">Kale Chips (Recipe)</a>
+            <a class="ingli" href="#">Beet (Ingredient)</a><a class="ingli" href="#">Carrot Cake (Recipe)</a>
+            </div> 
+        </li>
+        <li class="ho">Holiday Vibe
+            <div class="popular">
+            <a class="ingli" href="#">Sweet Potato Casserole (Recipe)</a> 
+            <a class="ingli" href="#">Thanksgiving Turkey (Recipe)</a>
+            <a class="ingli" href="#">Mashed Potatoes (Recipe)</a>
+            <a class="ingli" href="#">Bread Pudding (Recipe)</a>
+            <a class="ingli" href="#">Turkey (Ingredient)</a>
+            <a class="ingli" href="#">Pumpkin (Ingredient)</a>
+            <a class="ingli" href="#">Apple Squares (Recipe)</a><a class="ingli" href="#">Yams (Ingredient)</a>
+            <a class="ingli" href="#">Stuffed Mashrooms (Recipe)</a>
+            </div> 
+        </li>
+          </ul>	
+		</div>
 </nav>
 <div class="filter">
     <a class="ftext" href="#"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp; Location</a>
@@ -77,6 +87,7 @@
         <div class=one>
              <p class="store"><a href="#">1. Whole Foods</a> </p>
           <p class="add">399 4th St, San Francisco, CA, 94107 <span class="num">(415)618-0066</span></p>
+          <p class="time"><span>Open</span>&nbsp;9:00a.m.-9:00p.m.</p>
          </div>
          <a href="#"class="plus"><i class="fa fa-plus-circle" fa-3x></i></a>
         <div class="two">
@@ -90,8 +101,9 @@
         <div class=one>
              <p class="store"><a href="#">2. San Francisco Farmer's Market</a></p>
           <p class="add">399 4th St, San Francisco, CA, 94107 <span class="num">(415)618-0066</span></p>
+          <p class="time"><span>Open</span>&nbsp;9:00a.m.-9:00p.m.</p>
          </div>
-         <a href="#" class="plus"><i class="fa fa-plus-circle" fa-3x></i></a>
+         <div class="plus"><i class="fa fa-plus-circle" fa-3x></i></div>
         <div class="two">
           <p class="dis">0.2 mi</p>
           <p class="price">$1.25~$1.79 Per LB</p>
@@ -101,7 +113,8 @@
 </ul>
 </body>
 <div class="foot">
-       <a class="sl" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i> Shopping List</a>
+      <div class="sl"><i class="fa fa-list-ul" aria-hidden="true"></i> Shopping List <span id="slnum">0</span></div>
+<!--      <a class="sl1" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i> Shopping List (1)</a>-->
        <a class="mr" href="#"><i class="fa fa-spoon" aria-hidden="true"></i> My Recipes </a>
        <a class="set" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings </a>
 </div>
