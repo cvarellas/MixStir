@@ -11,7 +11,7 @@ $(document).ready(function(){
         }
     );
     
-    $(document).click( function(){
+    $('#close').click( function(){
         $('#list').hide();
         $('.des').fadeIn(0.01);
         $('.filter').fadeIn(0.01);
@@ -19,16 +19,20 @@ $(document).ready(function(){
     });
     
     $('.one').click(function(){
-       window.location.href = "https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage" 
+       window.location.href = "wholefoods.html" 
     });
     $('.two').click(function(){
        window.location.href = "https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage" 
     });
     
-
+//  setting number to 0
+    var shoppingList = 0;    
+//  read out what the computer is picking up console.log()
+    
     $('.plus').click(function(){
-        document.getElementById('slnum').innerHTML = '(1)';
-        document.getElementById('slnum').style.color = "white"
+    shoppingList++;
+     document.getElementById('slnum').innerHTML = '('+shoppingList+')';
+        document.getElementById('slnum').style.color = "white";
     });
     
 var availableTags = [
@@ -38,7 +42,7 @@ var availableTags = [
       source: availableTags
     });
     
-    $("#tags").keyup(function(){
+    $("#tags").keyup(function(){    
     if($(this).val().length>0){
         $("#list").hide();
     }
@@ -47,6 +51,12 @@ var availableTags = [
          $("#list").show();
     }
 });
+
+    
+    $('.input-group-btn').click(function(){
+       window.location.href = "marketspace.html" 
+    });
+    
   } );
 
 

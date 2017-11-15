@@ -8,7 +8,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/mastyle2.css">
-    <script src="js/script.js"></script>
     <script src="https://use.fontawesome.com/cf4260382b.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.2.1.js"
@@ -16,50 +15,58 @@
   crossorigin="anonymous"></script>
 <script src="js/msscript2.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Coustard|Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 
 <nav class="navbar">
   <div class="container-fluid">
       <a class="ms" href="#"><img src="img/logo.png" width="100%"></a>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group" for="tags">
+        <input type="text" class="form-control" placeholder="Search" id="tags">
         <div class="input-group-btn">
           <button class="btn btn-default" type="submit">
             <i class="glyphicon glyphicon-search"></i>
           </button>
         </div>
-      </div>
-      <div class="content-list" id="list">
-        <ul class="drop-list">
-            <li class="re">
-                <ul class="recent">Recent Search
-                   <li class="ingli">
-                      <a href="marketspace.html">
-						Apple (ingredient)
-					</a> 
-                   </li>
-                    <li class="ingli">
-                      <a href="marketspacere.html">
-						Apple pie (Recipe)
-					</a>
-                   </li>
-                </ul>	
-            </li>
-            <li class="po">
-                <ul class="popular">Popular Search
-                <li class="ingli">
-                <a href="#">Pumpkin Pie (Recipe)</a>    
-                </li>
-                <li class="ingli">
-                <a href="#">Pumpkin Pie (Recipe)</a>    
-                </li>
-                </ul>
-            </li>
-          </ul>	
-		</div>
+      </div>  
     <a class="user" href="#">Hi, Nancy</a>
   </div>
+  <div id="list">
+        <ul class="droplist"><i class="fa fa-times fa-2x" id="close" aria-hidden="true"></i>
+        <li class="re">Recent Search
+          <div class="recent">
+          <a class="ingli" href="marketspace.html">Apple (Ingredient)
+           </a> 
+           <a class="ingli" href="marketspacere.html">Pumpkin pie (Recipe)
+            </a> 
+          </div>	
+        </li>
+        <li class="po">Popular Search
+            <div class="popular">
+            <a class="ingli" href="#">Pumpkin Pie (Recipe)</a> 
+            <a class="ingli" href="#">Beef Stew (Recipe)</a>
+            <a class="ingli" href="#">Butternut Squash Soup (Recipe)</a>
+            <a class="ingli" href="#">Brussel Sprout (Ingredient)</a><a class="ingli" href="#">Kale Chips (Recipe)</a>
+            <a class="ingli" href="#">Beet (Ingredient)</a><a class="ingli" href="#">Carrot Cake (Recipe)</a>
+            </div> 
+        </li>
+        <li class="ho">Holiday Vibe
+            <div class="popular">
+            <a class="ingli" href="#">Sweet Potato Casserole (Recipe)</a> 
+            <a class="ingli" href="#">Thanksgiving Turkey (Recipe)</a>
+            <a class="ingli" href="#">Mashed Potatoes (Recipe)</a>
+            <a class="ingli" href="#">Bread Pudding (Recipe)</a>
+            <a class="ingli" href="#">Turkey (Ingredient)</a>
+            <a class="ingli" href="#">Pumpkin (Ingredient)</a>
+            <a class="ingli" href="#">Apple Squares (Recipe)</a><a class="ingli" href="#">Yams (Ingredient)</a>
+            <a class="ingli" href="#">Stuffed Mashrooms (Recipe)</a>
+            </div> 
+        </li>
+          </ul>	
+		</div>
 </nav>
 <div class="filter">
     <a class="ftext" href="#"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp; Location</a>
@@ -69,7 +76,7 @@
 </div>      
 <div class="des">
    <p class="result">
-       <a href="#" class="ingre">Ingredients (8)</a> for <a href="#" class="name"> Apple Pie </a>in your <a href="#" class="nei">neighborhood</a>
+       <a href="#" class="ingre">Ingredients (8)</a> for <a href="#" class="name"> Pumpking Pie </a>in your <a href="#" class="nei">neighborhood</a>
        <span class="location">44 Montgomery Street, San Francisco</span></p>
 </div>
 <ul class="market">

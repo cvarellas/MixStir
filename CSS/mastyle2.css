@@ -22,11 +22,38 @@ ul{
 .input-group{
     grid-area: b;
 }
-.drop-list{
-    margin-left: -20%;
+#list{
+    background-color: rgba(0,0,0,.05);
+}
+.droplist{
+    grid-area: d;
+    font-family: "montserrat";
+    font-size: 3vw;
+    padding: 2%;
+
+}
+#close{
+    color: #fe7a55;
+    float: right;
+    margin-right: 2vw;
+}
+.recent, .popular{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3vw;
+}
+.re, .po, .ho{
+    color: #fe7a55;
+    font-size: 3.5vw;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 .ingli{
-    margin-left:10%;
+    margin-top: 2%;
+    background-color: rgba(225,153,0,0.2);
+    color: #ff9900;
+    padding: 2%;
+    margin-right: 3%;
 }
 .user{
     grid-area: c;
