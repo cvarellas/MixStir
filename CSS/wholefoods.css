@@ -1,3 +1,7 @@
+body{
+    height: 100%;
+    width: 100%;
+}
 a{
     text-decoration: none !important;
 }
@@ -67,9 +71,12 @@ ul{
 }
 /* store section */
 .main{
-    margin: 2%;
-    padding: 3%;
-    border: black solid 2px;
+    margin: -5% 0 0 0;
+    font-family: "Montserrat";
+    font-size: 3vw;
+    padding: 3% 3% 0 3%;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
     display: grid;
     grid-template-columns: 4fr .5fr 1fr;
     grid-template-areas: "a a c"
@@ -84,10 +91,22 @@ ul{
 }
 .open{
     grid-area: d;
+    color: forestgreen;
 }
 .time{
     grid-area: f;
     text-align: right;
+}
+.add{
+    
+}
+.store{
+    font-family: "coustard";
+    font-size: 4vw;
+}
+.map{
+    margin-top: 0;
+    border 
 }
 
 /* footer*/
