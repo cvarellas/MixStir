@@ -1,0 +1,17 @@
+a {
+	text-decoration: none !important;
+}
+ul {
+	list-style-type: none;
+}
+.input-group {
+	margin-top: 2%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container-fluid {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-areas: "a b c";
+}
