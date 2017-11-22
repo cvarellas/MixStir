@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>MixStir</title>
+    <title>Log In</title>
     <link href="https://fonts.googleapis.com/css?family=Coustard|Montserrat" rel="stylesheet">
 
     <!-- Bootstrap -->
@@ -25,8 +25,8 @@
       text-decoration: bold;
       font-family: 'Montserrat', sans-serif;
     }
-    h6 {
-      text-align: center;
+    h5 {
+    	text-align: center;
       font-family: 'Montserrat', sans-serif;
     }
     .homepage-logo {
@@ -73,9 +73,9 @@
       overflow:visible;
     }
     .bottom-left-button {
-      position:absolute;
-      bottom:100px;
-      left:10px;
+    	position:absolute;
+    	bottom:100px;
+    	left:10px;
     }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -92,24 +92,25 @@
   </header>
     <div class="main-content">
       <div class="homepage-text-and-functions">
-      <h4>Enter an ingredient, a recipe or a link to an online recipe. Then tell us where you are.<br><br>We'll tell you where to go to get what you need.</h4>
+      <h4>Welcome back!</h4><br><h5>Enter your email address and password below.</h5>
     </div>  
     <div class="input-group" for="tags">
-        <input type="text" class="form-control" placeholder="Ingredient, recipe or recipe link" id="tags">
-    </div>
-     <div class="input-group" for="tags">
-        <input type="text" class="form-control" placeholder="Location" id="tags">
+        <input type="text" class="form-control" placeholder="Email address" id="tags">
+        <div class="input-group" for="tags">
+        <input type="text" class="form-control" placeholder="Password" id="tags">
         <div class="input-group-btn">
           <button class="btn btn-default" type="submit">
             <i class="glyphicon glyphicon-chevron-right"></i>
           </button>
         </div>
     </div>
-    <div class="buttons">
-     <button type="button" class="btn">Sign Up</button>
-    <button type="button" class="btn btn">Log In</button>
-  </div>
+    </div>
 </div>
+<div class="bottom-left-button">
+    <button class="btn btn-default" type="submit">
+    	<i class="glyphicon glyphicon-chevron-left"></i>
+    </button>
+ 	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
