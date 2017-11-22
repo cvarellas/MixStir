@@ -71,12 +71,12 @@ ul{
 }
 /* store section */
 .main{
-    margin: -5% 0 0 0;
+    margin: -7% 0 0 0;
     font-family: "Montserrat";
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding: 3% 3% 0 3%;
-    border-top: black solid 1px;
-    border-bottom: black solid 1px;
+    border-top: black solid .5px;
+    border-bottom: black solid .5px;
     display: grid;
     grid-template-columns: 4fr .5fr 1fr;
     grid-template-areas: "a a c"
@@ -102,12 +102,59 @@ ul{
 }
 .store{
     font-family: "coustard";
-    font-size: 4vw;
+    font-size: 5vw;
 }
 .map{
     margin-top: 0;
-    border 
 }
+/* adding to list */
+.title{
+    font-family: "coustard";
+    font-size: 4.5vw;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+/* actual list part */
+.shlist{
+    display: grid;
+    grid-template-columns: 4fr 1.5fr 3.5fr;
+    grid-template-areas: "a b c";
+    grid-column-gap: 2vw;
+    font-family: "montserrat";
+    font-size: 3.7vw;
+    margin-left: 2%;
+}
+.product{
+    grid-area: a
+}
+.amount{
+    grid-area: b
+}
+.actualin{
+    margin-top: 0;
+    margin-left: 3%;
+}
+select{
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    padding: 2px;
+}
+select i{
+    display: inline-block;
+    vertical-align: top;
+}
+.quantity1{
+    margin-top: -1.5%;
+}
+.quantity{
+    margin-top: 8%;
+}
+.pricetotal{
+    text-align: right;
+    margin-right: 3%;
+}
+
 
 /* footer*/
 .foot{
