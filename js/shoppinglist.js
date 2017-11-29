@@ -1,16 +1,5 @@
 $(document).ready(function(){
     $('#list').hide();
-<<<<<<< HEAD
-    
-    $('.form-control').click(     
-        function(event){
-            event.stopPropagation();
-            $("#list").fadeIn("fast");
-            $('.main').fadeOut(0.01);
-            $('.map').fadeOut(0.01);
-            $('.title').fadeOut(0.01);
-            $('.shlist').fadeOut(0.01);
-=======
     $('.dim').hide();
     
     $('.form-control').click(     
@@ -24,20 +13,10 @@ $(document).ready(function(){
      $('.result').fadeOut(0.01);
    $('.announce').fadeOut(0.01);
 
->>>>>>> master
         }
     );
     
     $('#close').click( function(){
-<<<<<<< HEAD
-        $('#list').hide();
-        $('.main').fadeIn(0.01);
-        $('.map').fadeIn(0.01);
-        $('.title').fadeIn(0.01);
-        $('.shlist').fadeIn(0.01);
-    });
-    
-=======
     $('#list').hide();
     $('.main').fadeIn(0.01);
     $('.map').fadeIn(0.01);
@@ -48,42 +27,11 @@ $(document).ready(function(){
     });
     
 
-    
->>>>>>> master
     $('.one').click(function(){
        window.location.href = "wholefoods.html" 
     });
 
-<<<<<<< HEAD
-    
-    
-    
-    $('.plus').click(function(){
-        document.getElementById('slnum').innerHTML = '(8)';
-        document.getElementById('slnum').style.color = "white";
-        document.getElementById('sumup').innerHTML = '8'; document.getElementById('sumup').style.color = "#fe7a55";
-
-    });
-    
-    $("#quantity").change(function(){  
-       document.getElementById('sumup').innerHTML = '7'; document.getElementById('sumup').style.color = "#fe7a55";
-       document.getElementById('totalprice').innerHTML = '$21.48-$36.63';
-    });
-    $("#quantityflour").change(function(){  
-       document.getElementById('sumup').innerHTML = '8'; document.getElementById('sumup').style.color = "#fe7a55";
-       document.getElementById('totalprice').innerHTML = '$22.28-$38.03';
-        
-    });
-    
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'your.mapbox.access.token'
-}).addTo(mymap);
-=======
-    $('.ellipsis').click(function(){
+ $('.ellipsis').click(function(){
     $('.collapsible').css({"transform": "TranslateY(0)"});
     $('.dim').fadeIn(0.01);
         $('.dim').css({"z-index": "0"});
@@ -115,7 +63,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
        document.getElementById('slnum').innerHTML = '(13)';
        document.getElementById('slnum').style.color = "white";
     });
->>>>>>> master
 
 var availableTags = [
       "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner"
