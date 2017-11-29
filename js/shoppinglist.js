@@ -65,13 +65,13 @@ $(document).ready(function(){
     });
 
 var availableTags = [
-      "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner"
+      "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner", "pumpkin pie"
     ];
     $( "#tags" ).autocomplete({
       source: availableTags
     });
     
-    $("#tags").keyup(function(){    
+    $("#tags").keyup(function(){
     if($(this).val().length>0){
         $("#list").hide();
     }
@@ -80,6 +80,10 @@ var availableTags = [
          $("#list").show();
     }
 });
+
+    $('.input-group-btn').click(function(){
+       window.location.href = "marketspacere.html" 
+    });
     
     
         

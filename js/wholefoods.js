@@ -1,24 +1,29 @@
 $(document).ready(function(){
     $('#list').hide();
+    $('.dim').hide();
     
     $('.form-control').click(     
         function(event){
-            event.stopPropagation();
-            $("#list").fadeIn("fast");
-            $('.main').fadeOut(0.01);
-            $('.map').fadeOut(0.01);
-            $('.title').fadeOut(0.01);
-            $('.shlist').fadeOut(0.01);
+     event.stopPropagation();
+     $("#list").fadeIn("fast");
+     $('.main').fadeOut(0.01);
+     $('.map').fadeOut(0.01);
+     $('.title').fadeOut(0.01);
+     $('.shlist').fadeOut(0.01);
+     $('.result').fadeOut(0.01);
+
         }
     );
     
     $('#close').click( function(){
-        $('#list').hide();
-        $('.main').fadeIn(0.01);
-        $('.map').fadeIn(0.01);
-        $('.title').fadeIn(0.01);
-        $('.shlist').fadeIn(0.01);
+    $('#list').hide();
+    $('.main').fadeIn(0.01);
+    $('.map').fadeIn(0.01);
+    $('.title').fadeIn(0.01);
+    $('.shlist').fadeIn(0.01);
+    $('.result').fadeIn(0.01);
     });
+    
     
     $('.one').click(function(){
        window.location.href = "wholefoods.html" 
@@ -44,22 +49,14 @@ $(document).ready(function(){
         
     });
     
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'your.mapbox.access.token'
-}).addTo(mymap);
-
-var availableTags = [
-      "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner"
+    var availableTags = [
+      "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner", "pumpkin pie"
     ];
     $( "#tags" ).autocomplete({
       source: availableTags
     });
     
-    $("#tags").keyup(function(){    
+    $("#tags").keyup(function(){
     if($(this).val().length>0){
         $("#list").hide();
     }
@@ -68,7 +65,21 @@ var availableTags = [
          $("#list").show();
     }
 });
+
+    $('.input-group-btn').click(function(){
+       window.location.href = "marketspacere.html" 
+    });
     
+    
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+
+
     
         
   } );

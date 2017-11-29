@@ -29,7 +29,7 @@ $(document).ready(function(){
     });
     
 var availableTags = [
-      "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner"
+      "apple", "pumpkin", "basil", "banana", "cinnamon", "apple(recipe)", "egg", "egg tart", "french toast", "egg benedict", "muffin", "craneberry", "spinach", "turkey", "Thanksgiving dinner", "pumpkin pie"
     ];
     $( "#tags" ).autocomplete({
       source: availableTags
@@ -46,7 +46,7 @@ var availableTags = [
 });
 
     $('.input-group-btn').click(function(){
-       window.location.href = "marketspace.html" 
+       window.location.href = "marketspacere.html" 
     });
     
   } );
