@@ -19,15 +19,12 @@ $(document).ready(function(){
     });
     
     $('.one').click(function(){
-       window.location.href = "https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage" 
+       window.location.href = "wholefoods.html"
     });
-    $('.two').click(function(){
-       window.location.href = "https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage" 
-    });
-    
+
 
     $('.plus').click(function(){
-        document.getElementById('slnum').innerHTML = '(1)';
+        document.getElementById('slnum').innerHTML = '(6)';
         document.getElementById('slnum').style.color = "white"
     });
     

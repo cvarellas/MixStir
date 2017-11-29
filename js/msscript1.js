@@ -21,9 +21,6 @@ $(document).ready(function(){
     $('.one').click(function(){
        window.location.href = "wholefoods.html" 
     });
-    $('.two').click(function(){
-       window.location.href = "https://stackoverflow.com/questions/503093/how-to-redirect-to-another-webpage" 
-    });
     
 //  setting number to 0
     var shoppingList = 0;    
@@ -54,10 +51,11 @@ var availableTags = [
 
     
     $('.input-group-btn').click(function(){
-       window.location.href = "marketspace.html" 
+       window.location.href = "marketspace.html";
+
     });
+        });
     
-  } );
 
 
 
