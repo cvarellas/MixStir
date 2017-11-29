@@ -28,7 +28,7 @@ $(document).ready(function(){
     
     
     $('.plus').click(function(){
-        document.getElementById('slnum').innerHTML = '(8)';
+        document.getElementById('slnum').innerHTML = '(9)';
         document.getElementById('slnum').style.color = "white";
         document.getElementById('sumup').innerHTML = '8'; document.getElementById('sumup').style.color = "#fe7a55";
 
