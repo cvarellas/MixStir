@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>wholefoods</title>
+    <title>shoppinglist</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-
+<div class="dim"></div>
 <nav class="navbar">
   <div class="container-fluid">
       <a class="ms" href="#"><img src="img/logo.png" width="100%"></a>
@@ -47,7 +47,7 @@
         </li>
         <li class="po">Popular Search
             <div class="popular">
-            <a class="ingli" href="#">Pumpkin Pie (Recipe)</a> 
+            <a class="ingli" href="marketspacere.html">Pumpkin Pie (Recipe)</a> 
             <a class="ingli" href="#">Beef Stew (Recipe)</a>
             <a class="ingli" href="#">Butternut Squash Soup (Recipe)</a>
             <a class="ingli" href="#">Brussel Sprout (Ingredient)</a><a class="ingli" href="#">Kale Chips (Recipe)</a>
@@ -70,22 +70,19 @@
 		</div>
 
 </nav>
-<div class="main">
-  <div class=one>
-    <p class="store">Whole Foods </p>
-    <p class="add">399 4th St, San Francisco, CA, 94107 <span class="num">(415)618-0066</span></p>
-  </div>
-  <div class="two">
-    <p class="price">$$</p>
-    <p class="dis">0.2 mi</p>
-  </div>
-    <p class="open">Open</p>
-    <p class="time">9:00a.m.-9:00p.m.</p>
+
+<div class="announce">
+   <div class="anntitle"><div>Shopping List for Nancy </div><div class="ellipsis"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div></div>
+   <div class="content">
+   Hi Nancy! You are getting
+   <p><a href="#">Apple</a> and</p>
+   <p >Ingredients for <a href="">Pumpkin Pie</a>, <a href="#">Matcha Crepe Cake</a> from <span class="ingredientsfor">Wholefoods</span> and <span class="ingredientsfor">Ming Lee Trading</span>.
+   <p> Have fun cooking!
+   </p>
+   </div>
 </div>
-<div class="map">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8487.585556564243!2d-122.40555857053964!3d37.78607379791309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807e4c0d8785%3A0xba99b9e248ba2c2c!2sWhole+Foods+Market!5e0!3m2!1sen!2sus!4v1510712067443" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe> 
-</div>
-<p class="title"><a href="#" class="ingnum">Ingredients (6)</a> for <a href="name">Pumpkin Pie (recipe)</a><span class="plus"> &nbsp;&nbsp;<i class="fa fa-plus-circle" fa-3x ></i></span></p>
+
+<p class="title"><a href="#" class="ingnum">Ingredients (10)</a> for <a href="name">Pumpkin Pie (recipe)</a> and <a href="name">Matcha Crepe Cake (recipe)</a></p>
 
 <div class="shlist">
  <div class="product">
@@ -95,9 +92,93 @@
     <p class="actualin">Cane Sugar</p>
     <p class="actualin">Vanilla Extract</p>
     <p class="actualin">Ground Cinnamon</p>
+    <p class="actualin">Whole Milk</p>
+    <p class="actualin">Butter</p>
+    <p class="actualin">Baking Powder</p>
+    <p class="actualin">Canola Oil</p>
  </div>
  <div class="amount">
   <div class="quantity1">
+   <select name="quantity" id="quantity">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2" selected>2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <span class="inner"><i class="fa fa-sort" aria-hidden="true"></i></span>
+   </select> 
+  </div>
+  <div class="quantity">
+   <select name="quantity" id="quantityegg">
+    <option value="0">0</option>
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <span class="inner"><i class="fa fa-sort" aria-hidden="true"></i></span>
+   </select> 
+  </div>
+  <div class="quantity">
+   <select name="quantity" id="quantityflour">
+    <option value="0">0</option>
+    <option value="1" selected>1</option>
+    <option value="2" selected>2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <span class="inner"><i class="fa fa-sort" aria-hidden="true"></i></span>
+   </select> 
+  </div>
+  <div class="quantity">
+   <select name="quantity" id="quantity">
+    <option value="0">0</option>
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <span class="inner"><i class="fa fa-sort" aria-hidden="true"></i></span>
+   </select> 
+  </div>
+  <div class="quantity">
+   <select name="quantity" id="quantity">
+    <option value="0">0</option>
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <span class="inner"><i class="fa fa-sort" aria-hidden="true"></i></span>
+   </select> 
+  </div>
+  <div class="quantity">
    <select name="quantity" id="quantity">
     <option value="0">0</option>
     <option value="1" selected>1</option>
@@ -202,17 +283,97 @@
      <p class="single">$2.5-$4.99/4lb</p>
      <p class="single">$5.24-$10.5/2oz</p>
      <p class="single">$2.99-$3.99/oz</p>
+     <p class="single">$3.49-$5.99/64oz</p>
+     <p class="single">$2.37-$4.04/8oz</p>
+     <p class="single">$1.99/10oz</p>
+     <p class="single">$3.79/33.8oz</p>
  </div>
 </div>
-<div class="result">
-    <p class="subtotal">Subtotal (<span id="sumup">6</span> ingredients):</p>
-    <p id="totalprice">$18.5-$31.75</p>
+<div class="main">
+  <div class=one>
+    <p class="store">Whole Foods </p>
+    <p class="add">399 4th St, San Francisco, CA, 94107 <span class="num">(415)618-0066</span></p>
+  </div>
+  <div class="two">
+    <p class="price">$$</p>
+    <p class="dis">0.2 mi</p>
+  </div>
+    <p class="open">Open</p>
+    <p class="time">9:00a.m.-9:00p.m.</p>
 </div>
+<div class="separating"></div>
+<p class="title"><a href="#" class="ingnum">Ingredients (1)</a> for <a href="name">Matcha Crepe Cake (recipe)</a></p>
+
+<div class="shlist">
+ <div class="product">
+    <p class="actualin">Green Tea Powder</p>
+ </div>
+ <div class="amount">
+  <div class="quantity1">
+   <select name="quantity" id="quantitytea">
+    <option value="0">0</option>
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <span class="inner"><i class="fa fa-sort" aria-hidden="true"></i></span>
+   </select> 
+  </div>
+  
+ </div>
+<!-- price -->
+ <div class="pricetotal">
+     <p class="single">$9.49-$9.99/1oz</p>
+ </div>
+ 
+</div>
+<div class="main">
+  <div class=one>
+    <p class="store">Ming Lee Trading </p>
+    <p class="add">759 Jackson St, San Francisco, CA, 94133 </p><p class="num">(415)217-0088</p>
+  </div>
+  <div class="two">
+    <p class="price">$$</p>
+    <p class="dis">0.5 mi</p>
+  </div>
+    <p class="open">Open</p>
+    <p class="time">9:30a.m.-6:00p.m.</p>
+</div>
+<div class="result">
+    <p class="subtotal">Subtotal (<span id="sumup">13</span> ingredients):</p>
+    <p id="totalprice">$43.41-$63.83</p>
+</div>
+<div class="blankspace"></div>
+
 
 </body>
+<div class="footer">
+    <div class="collapsible">
+   <p>
+    <i class="fa fa-picture-o" aria-hidden="true"></i> &nbsp;Save To Phone As Picture
+   </p>
+   <p>
+    <i class="fa fa-envelope-o" aria-hidden="true"> </i>&nbsp; Send To Me As E-mail
+   </p>
+   <p>
+    <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp; Send To Me As Text Message
+   </p>
+   <p class="cancel">
+       Cancel
+   </p>
+   </div>
 <div class="foot">
-      <div class="sl"><a href="shoppinglist.html"><i class="fa fa-list-ul" aria-hidden="true"></i> Shopping List <span id="slnum">0</span></a></div>
+
+      <div class="sl"><a href="shoppinglist.html"><i class="fa fa-list-ul" aria-hidden="true"></i> Shopping List <span id="slnum">(13)</span></a></div>
        <a class="mr" href="#"><i class="fa fa-spoon" aria-hidden="true"></i> My Recipes </a>
        <a class="set" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings </a>
+</div>
+    
 </div>
 </html>

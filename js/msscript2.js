@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 
     $('.plus').click(function(){
-        document.getElementById('slnum').innerHTML = '(6)';
+        document.getElementById('slnum').innerHTML = '(7)';
         document.getElementById('slnum').style.color = "white"
     });
     
