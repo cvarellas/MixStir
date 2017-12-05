@@ -123,7 +123,7 @@ ul{
 }
 .market{
     list-style-type: none;
-    margin-left: -9.5%;
+    margin-left: -11%;
 }
 .market>li{
     margin:0;
@@ -137,7 +137,7 @@ ul{
     grid-template-areas: "a c b";
     flex-direction: column;
     font-family: "Montserrat";
-    margin-left: 10%;
+    margin-left: 7%;
 
 }
 .plus{
