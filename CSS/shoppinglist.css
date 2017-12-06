@@ -196,8 +196,9 @@ ul{
     margin-top: 2%;
 }
 .actualin{
-    margin-top: 0;
+    margin-bottom: 1.5vh;
     margin-left: 3%;
+    height: 2.7vh;
 }
 select{
     border: 1px solid #DDD;
@@ -209,10 +210,13 @@ select i{
     vertical-align: top;
 }
 .quantity1{
-    margin-top: -1.5%;
+    margin-top: -2.5%;
+    margin-bottom: 1.5vh;
+    height: 2.7vh;
 }
 .quantity{
-    margin-top: 6.4%;
+    margin-bottom: 1.5vh;
+    height: 2.7vh
 }
 .pricetotal{
     text-align: right;
