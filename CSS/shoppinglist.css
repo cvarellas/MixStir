@@ -193,7 +193,7 @@ ul{
 }
 .amount{
     grid-area: b;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .actualin{
     margin-top: 0;
@@ -212,7 +212,7 @@ select i{
     margin-top: -1.5%;
 }
 .quantity{
-    margin-top: 5%;
+    margin-top: 6.4%;
 }
 .pricetotal{
     text-align: right;
