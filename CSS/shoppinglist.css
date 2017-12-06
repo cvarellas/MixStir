@@ -221,6 +221,11 @@ select i{
 .pricetotal{
     text-align: right;
     margin-right: 3%;
+    margin-top: 1%;
+}
+.single{
+    height: 2.7vh;
+    margin-bottom: 1.5vh;
 }
 .result{
     position: fixed;
