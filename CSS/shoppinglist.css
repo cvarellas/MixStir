@@ -90,13 +90,14 @@ ul{
 /* Hi Nancy*/
 .announce{
     font-family: "Montserrat";
-    font-size: 3.5vw;
+    font-size: 4.3vw;
     padding: 2%;
     border: solid #ffd633 2px;
     margin-top: -3vh;
 }
 .content{
     text-align: center;
+    margin-top: 2vh;
 }
 .content a{
     color: #ff9900;
@@ -107,7 +108,7 @@ ul{
 }
 .anntitle{
     font-family: "coustard";
-    font-size: 4vw;
+    font-size: 5vw;
     
 }
 .content p{
