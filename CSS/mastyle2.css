@@ -132,7 +132,7 @@ ul{
 }
 .wf{
     display: grid;
-    grid-template-columns:4fr 1fr 3fr;
+    grid-template-columns:4fr 1fr 3.5fr;
     grid-template-areas: "a c b";
     flex-direction: column;
     font-family: "Montserrat";
@@ -161,7 +161,7 @@ ul{
 }
 .add{
     margin-top: 0;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 .two{
     grid-area: b;

@@ -133,7 +133,7 @@ ul{
 }
 .wf{
     display: grid;
-    grid-template-columns:4fr 1.5fr 1fr;
+    grid-template-columns:5fr 1.2fr .8fr;
     grid-template-areas: "a c b";
     flex-direction: column;
     font-family: "Montserrat";
@@ -155,7 +155,9 @@ ul{
     margin-left: 15%;
 }
 .add{
-    margin-top: 5%;
+    margin-top: 1%;
+    font-size: 3.4vw;
+    margin-bottom: 3%;
 }
 .two{
     grid-area: b;
@@ -167,6 +169,9 @@ ul{
 }
 .num{
     display: block;
+}
+.time{
+    font-size: 3.5vw;
 }
 .time span{
     color: green;
